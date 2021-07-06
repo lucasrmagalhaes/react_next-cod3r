@@ -12,3 +12,8 @@
 - Componente com estado;
 - Renderização condicional; e
 - Rendererização de lista de componentes.
+
+#### Criando o Projeto:
+- Instalação do Node;
+<pre>npx create-next-app exercicios</pre>
+<pre>npm run dev</pre>
