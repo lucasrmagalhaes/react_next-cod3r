@@ -46,3 +46,7 @@
 
 #### Renderização SSR:
 [SSR]()
+
+#### Renderização SSG:
+[SSG]()
+
