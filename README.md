@@ -43,3 +43,6 @@
 
 #### Renderização SPA:
 [SPA]()
+
+#### Renderização SSR:
+[SSR]()
