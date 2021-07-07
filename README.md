@@ -33,3 +33,10 @@
 
 #### Criando o Projeto:
 <pre>npx create-next-app portas</pre>
+
+### 4. Modos de Pré Renderização do Next JS
+
+#### Estratégias de Renderização:
+- SPA (Cliente)
+- SSR (Server) -> Runtime
+- SSG (Server) -> Build
