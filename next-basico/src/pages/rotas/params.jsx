@@ -11,7 +11,7 @@ export default function params() {
         <div>
             {/* http://localhost:3000/rotas/params?id=123&nome=Lucas */}
             <h1>Rotas Params: {id} e {nome}</h1>
-            <Link href="/rotas">
+            <Link href="/rotas" passHref>
                 <button>Voltar</button>
             </Link>
         </div>

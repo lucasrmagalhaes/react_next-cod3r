@@ -9,7 +9,7 @@ export default function codigoENome() {
     return (
         <div>
             <h1>Rotas  / {codigo} / {nome}</h1>
-            <Link href="/rotas">
+            <Link href="/rotas" passHref>
                 <button>Voltar</button>
             </Link>
         </div>
