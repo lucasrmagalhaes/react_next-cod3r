@@ -17,3 +17,6 @@
 - Instalação do Node;
 <pre>npx create-next-app exercicios</pre>
 <pre>npm run dev</pre>
+
+#### Tabuleiro:
+<pre>npx create-next-app tabuleiro</pre>
