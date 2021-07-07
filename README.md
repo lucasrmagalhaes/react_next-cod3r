@@ -1,7 +1,7 @@
 # Next.js & React - Curso Completo - Totalmente Baseado em Projetos
 ## NEXTJS É VERSÃO FRAMEWORK DO REACT
 
-### Revisão React
+### 1. Revisão React
 
 #### Objetivos do Módulo:
 - Criar projeto Next;
@@ -20,3 +20,12 @@
 
 #### Tabuleiro:
 <pre>npx create-next-app tabuleiro</pre>
+
+### 2. Fundamentos de Next JS
+
+#### Criando o Projeto:
+<pre>npx create-next-app next-basico</pre>
+
+#### Estrutura do Projeto:
+<pre>npm run lint</pre>
+
