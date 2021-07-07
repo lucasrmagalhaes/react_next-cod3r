@@ -50,3 +50,5 @@
 #### Renderização SSG:
 [SSG]()
 
+#### Criando o Projeto:
+<pre>npx create-next-app renderizacao</pre>
