@@ -40,3 +40,6 @@
 - SPA (Cliente)
 - SSR (Server) -> Runtime
 - SSG (Server) -> Build
+
+#### Renderização SPA:
+[SPA]()
