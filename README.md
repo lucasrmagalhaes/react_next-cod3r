@@ -52,3 +52,11 @@
 
 #### Criando o Projeto:
 <pre>npx create-next-app renderizacao</pre>
+
+### Projeto Template Admin - Autenticação e Integração com o Firebase
+
+#### Criando o Projeto:
+<pre>npx create-next-app admin-template</pre>
+<pre>yarn add --dev typescript @types/react</pre>
+<pre>yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest</pre>
+<pre>npx tailwindcss init -p</p>
