@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import router from 'next/router'
 import loading from '../../../public/images/loading.gif'
@@ -10,6 +11,17 @@ export default function ForcarAutenticao(props) {
     function renderizarConteudo() {
         return (
             <>
+                <Head>
+                    <script 
+                        dangerouslySetInnerHTML={{
+                            __html:`
+                                if(!document.cookie?.includes("admin-template-next-auth")) {
+                                    window.location.href = "/autenticacao"
+                                }
+                            `
+                        }}
+                    />
+                </Head>
                 {props.children}
             </>
         )
@@ -24,8 +36,6 @@ export default function ForcarAutenticao(props) {
             </div>
         )
     }
-
-    console.log(carregando, usuario)
 
     if (!carregando && usuario?.email) {
         return renderizarConteudo()
