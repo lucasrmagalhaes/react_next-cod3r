@@ -5,7 +5,6 @@ import useAppData from "../../data/hook/useAppData";
 import React from "react";
 import ForcarAutenticao from "../auth/ForcarAutenticao";
 
-
 interface LayoutProps {
   titulo: string;
   subtitulo: string;
