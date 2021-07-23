@@ -1,32 +1,43 @@
 .area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: var(--area-porta-largura);
-    height: var(--area-porta-altura);
-    margin: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--area-porta-largura);
+  height: var(--area-porta-altura);
+  margin: 10px;
 }
 
 .estrutura {
-    display: flex;
-    flex-grow: 1;
-    border-left: 5px solid brown;
-    border-top: 5px solid brown;
-    border-right: 5px solid brown;
-    width: 90%;
+  display: flex;
+  flex-grow: 1;
+  border-left: 5px solid brown;
+  border-top: 5px solid brown;
+  border-right: 5px solid brown;
+  width: 90%;
 }
 
 .porta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-    background-color: chocolate;
-    padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  background-color: chocolate;
+  padding: 15px;
 }
 
 .numero {
-    font-size: 3rem;
+  font-size: 3rem;
+}
+
+.macaneta {
+  position: absolute;
+  align-self: flex-start;
+  top: calc(0.45 * var(--area-porta-altura));
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: brown;
 }
 
 .chao {
