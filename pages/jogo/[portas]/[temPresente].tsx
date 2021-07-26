@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React, { useEffect, useState } from "react"
 import Porta from "../../../components/Porta"
 import { atualizarPortas, criarPortas } from "../../../functions/portas"
@@ -20,11 +21,17 @@ export default function jogo() {
   function renderizarPortas() {
     return portas.map(porta => {
       return (
-        <Porta 
-          key={porta.numero} 
-          porta={porta} 
-          onChange={novaPorta => setPortas(atualizarPortas(portas, novaPorta))} 
-        />
+        <>
+          <Head>
+            <title>Porta Premiada</title>
+          </Head>
+
+          <Porta 
+            key={porta.numero} 
+            porta={porta} 
+            onChange={novaPorta => setPortas(atualizarPortas(portas, novaPorta))} 
+          />
+        </>
       )
     })
   }
