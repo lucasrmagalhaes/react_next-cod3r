@@ -6,7 +6,7 @@ export default (req, res) => {
   const unicaQuestaoOuNada = questoes.filter(questao => questao.id === idSelecionado)
 
   if (unicaQuestaoOuNada.length === 1) {
-    const questaoSelecionada = unicaQuestaoOuNada[0]
+    const questaoSelecionada = unicaQuestaoOuNada[0].embaralharRespostas()
     res.status(200).json(questaoSelecionada.converterParaObjeto())
   } else {
     res.status(204).send() // 204 - No Content
