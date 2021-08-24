@@ -1,9 +1,24 @@
 .resposta {
   display: flex;
+  min-width: 500px;
+  width: 80%;
+  /* align-self: stretch; */
+  height: 100px;
+  margin: 10px;
+  /* background-color: crimson; */
+}
+
+.conteudoResposta {
+  position: relative;
+  display: flex;
+  flex: 1;
 }
 
 .frente, .verso {
+  position: absolute;
   display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .frente {
