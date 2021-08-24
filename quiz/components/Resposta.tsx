@@ -6,17 +6,22 @@ interface RespostaProps {
   valor: RespostaModel;
   indice: number;
   letra: string;
-  corLetra: string;
+  corFundoLetra: string;
 }
 
-export default function Resposta({ valor, indice, letra, corLetra }: RespostaProps) {
+export default function Resposta({ valor, indice, letra, corFundoLetra }: RespostaProps) {
   const resposta = valor
 
   return (
     <div className={styles.resposta}>
       <div className={styles.conteudoResposta}>
         <div className={styles.frente}>
-          <div className={styles.letra}>
+          <div 
+            className={styles.letra}
+            style={{
+              backgroundColor: corFundoLetra
+            }}
+          >
             {letra}
           </div>
           <div className={styles.valor}>

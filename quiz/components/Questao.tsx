@@ -15,11 +15,12 @@ export default function Questao({ valor }: QuestaoProps) {
   function rendizarRespostas() {
     return questao.respostas.map((resposta, i) => { 
       return (
-        <Resposta 
+        <Resposta
+          key={i}
           valor={resposta}
           indice={i}
           letra="A"
-          corLetra="#F2C866"
+          corFundoLetra="#F2C866"
         />
       )
     })
