@@ -61,7 +61,7 @@ export default function Home() {
     router.push({
       pathname: '/resultado',
       query: {
-        perguntas: idsDasQuestoes.length,
+        total: idsDasQuestoes.length,
         certas: respostasCertas,
       }
     });
