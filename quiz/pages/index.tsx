@@ -7,7 +7,7 @@ const questaoMock = new QuestaoModel(1, 'Qual é a melhor cor?', [
   RespostaModel.errada('Verde'),
   RespostaModel.errada('Vermelha'),
   RespostaModel.errada('Azul'),
-  RespostaModel.errada('Preta'),
+  RespostaModel.certa('Preta'),
 ])
 
 export default function Home() {
