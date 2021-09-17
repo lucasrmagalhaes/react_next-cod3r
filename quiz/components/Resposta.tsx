@@ -7,13 +7,17 @@ interface RespostaProps {
   indice: number;
   letra: string;
   corFundoLetra: string;
+  respostaFornecida: (indice: number) => void;
 }
 
-export default function Resposta({ valor, indice, letra, corFundoLetra }: RespostaProps) {
+export default function Resposta({ valor, indice, letra, corFundoLetra, respostaFornecida }: RespostaProps) {
   const resposta = valor
 
   return (
-    <div className={styles.resposta}>
+    <div 
+      className={styles.resposta}
+      onClick={() => respostaFornecida(indice)}
+    >
       <div className={styles.conteudoResposta}>
         <div className={styles.frente}>
           <div 

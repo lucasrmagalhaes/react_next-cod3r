@@ -13,10 +13,11 @@ const letras = [
 ]
 
 interface QuestaoProps {
-  valor: QuestaoModel
+  valor: QuestaoModel;
+  respostaFornecida: (indice: number) => void;
 }
 
-export default function Questao({ valor }: QuestaoProps) {
+export default function Questao({ valor, respostaFornecida }: QuestaoProps) {
   const questao = valor
 
   function rendizarRespostas() {
@@ -28,6 +29,7 @@ export default function Questao({ valor }: QuestaoProps) {
           indice={i}
           letra={letras[i].valor}
           corFundoLetra={letras[i].cor}
+          respostaFornecida={respostaFornecida}
         />
       )
     })
