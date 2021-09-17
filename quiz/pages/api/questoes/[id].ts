@@ -1,7 +1,6 @@
-/* eslint-disable import/no-anonymous-default-export */
 import questoes from "../bancoDeQuestoes"
 
-export default (req, res) => {
+export default function questoesPorId(req: any, res: any) {
   const idSelecionado = +req.query.id
 
   const unicaQuestaoOuNada = questoes.filter(questao => questao.id === idSelecionado)
