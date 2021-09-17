@@ -1,5 +1,15 @@
 ## Quiz:
 
 ### Criando o Projeto
-<pre>npx create-next-app quiz</pre>
-<pre>npm install --dev typescript @types/react</pre>
+```npx 
+npx create-next-app quiz 
+```
+
+```npm
+npm install --dev typescript @types/react
+```
+
+### Componente Temporizador
+```npm
+npm i react-countdown-circle-timer
+```
