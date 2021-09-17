@@ -12,7 +12,7 @@ export default function Temporizador({ duracao, tempoEsgotado }: TemporizadorPro
     <div className={styles.temporizador}>
       <CountdownCircleTimer
         duration={duracao}
-        size={120}
+        size={80}
         isPlaying
         onComplete={tempoEsgotado}
         colors={[

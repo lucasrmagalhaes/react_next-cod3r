@@ -1,9 +1,8 @@
 import QuestaoModel from "../model/questao";
 import Questao from "./Questao";
-
-import styles from '../styles/Questionario.module.css';
 import Botao from "./Botao";
 
+import styles from '../styles/Questionario.module.css';
 interface QuestionarioProps {
   questao: QuestaoModel;
   ultima: boolean;

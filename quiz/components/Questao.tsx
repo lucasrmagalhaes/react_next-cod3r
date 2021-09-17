@@ -1,5 +1,4 @@
 import QuestaoModel from '../model/questao';
-
 import Enunciado from './Enunciado';
 import Resposta from './Resposta';
 import Temporizador from './Temporizador';
