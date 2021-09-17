@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { embaralhar } from '../../../functions/array'
 import questoes from '../bancoDeQuestoes'
 
