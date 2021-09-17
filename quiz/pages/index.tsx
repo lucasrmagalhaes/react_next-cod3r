@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import Questionario from '../components/Questionario';
 import QuestaoModel from '../model/questao'
@@ -15,6 +16,7 @@ const BASE_URL = 'http://localhost:3000/api'
 export default function Home() {
   const [idsDasQuestoes, setIdsDasQuestoes] = useState<number[]>([]);
   const [questao, setQuestao] = useState<QuestaoModel>(questaoMock);
+  const [respostasCertas, setRespostasCertas] = useState<number>(0);
 
   async function carregarIdsDasQuestoes() {
     const resp = await fetch(`${BASE_URL}/questionario`);
@@ -39,8 +41,11 @@ export default function Home() {
     idsDasQuestoes.length > 0 && carregarQuestao(idsDasQuestoes[0]);
   }, [idsDasQuestoes])
 
-  function questaoRespondida(questao: QuestaoModel) {
-
+  function questaoRespondida(questaoRespondida: QuestaoModel) {
+    setQuestao(questaoRespondida);
+    const acertou = questaoRespondida.acertou;
+    setRespostasCertas(respostasCertas + (acertou ? 1 : 0));
+    // console.log(respostasCertas + (acertou ? 1 : 0));
   }
 
   function irPraProximoPasso() {
@@ -48,11 +53,16 @@ export default function Home() {
   }
 
   return (
-    <Questionario 
-      questao={questao}
-      ultima={false}
-      questaoRespondida={questaoRespondida}
-      irPraProximoPasso={irPraProximoPasso}
-    />      
+    <>
+      <Head>
+        <title>Quiz</title>
+      </Head>
+      <Questionario 
+        questao={questao}
+        ultima={false}
+        questaoRespondida={questaoRespondida}
+        irPraProximoPasso={irPraProximoPasso}
+      />
+    </>      
   )
 }
